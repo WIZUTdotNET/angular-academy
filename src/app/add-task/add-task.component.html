@@ -1,0 +1,14 @@
+<div class="form-container">
+  <p>Add a new task</p>
+  <form [formGroup]="taskForm" (ngSubmit)="addTask()">
+    <p>Name</p>
+    <input type="text" formControlName="title">
+    <br>
+    <p>Deadline</p>
+    <input type="date" formControlName="deadline" >
+    <br>
+    <br>
+    <button [disabled]="isFormValid()">Add</button>
+  </form>
+</div>
+
