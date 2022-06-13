@@ -1,5 +1,5 @@
-<div class="task-container">
-  <p>{{task!.title}}</p>
+<div class="task-container card">
+  <p><b>{{task!.title}}</b></p>
   <p>{{task!.deadline}}</p>
-  <button (click)="removeTask()">Delete</button>
+  <button class="btn btn-danger" (click)="removeTask()">Delete</button>
 </div>

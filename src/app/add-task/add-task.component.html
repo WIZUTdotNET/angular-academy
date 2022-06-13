@@ -1,4 +1,4 @@
-<div class="form-container">
+<div class="form-container card">
   <p>Add a new task</p>
   <form [formGroup]="taskForm" (ngSubmit)="addTask()">
     <p>Name</p>
@@ -8,7 +8,7 @@
     <input type="date" formControlName="deadline" >
     <br>
     <br>
-    <button [disabled]="isFormValid()">Add</button>
+    <button class="btn btn-primary" [disabled]="isFormValid()">Add</button>
   </form>
 </div>
 
